@@ -15,17 +15,6 @@ Comment4 ""
 $EndDescr
 NoConn ~ 5550 2550
 $Comp
-L Connector_Generic:Conn_02x04_Top_Bottom J2
-U 1 1 5F80BF5D
-P 4850 1100
-F 0 "J2" H 4900 1417 50  0000 C CNN
-F 1 "Conn_02x04_Top_Bottom" H 4900 1326 50  0000 C CNN
-F 2 "Connector_PinSocket_2.54mm:PinSocket_2x04_P2.54mm_Vertical" H 4850 1100 50  0001 C CNN
-F 3 "~" H 4850 1100 50  0001 C CNN
-	1    4850 1100
-	-1   0    0    -1  
-$EndComp
-$Comp
 L Connector:Conn_01x04_Male J3
 U 1 1 5F80C5C2
 P 5600 1100
@@ -3871,14 +3860,6 @@ EE 15 C2 FD 78 20 10 08 2C 42 82 B8 07 02 81 C0 22 24 88 7B 20 10 08 2C 42 82 B8
 EndData
 $EndBitmap
 Wire Wire Line
-	5050 1000 5400 1000
-Wire Wire Line
-	5050 1100 5400 1100
-Wire Wire Line
-	5050 1200 5400 1200
-Wire Wire Line
-	5050 1300 5400 1300
-Wire Wire Line
 	4550 1000 4000 1000
 Wire Wire Line
 	4550 1100 4000 1100
@@ -3902,4 +3883,23 @@ Text Label 4100 1200 0    50   ~ 0
 RESET
 Text Label 4100 1300 0    50   ~ 0
 Vcc
+$Comp
+L conn_02x04:conn_02x04 U1
+U 1 1 5F82EDFB
+P 4750 1050
+F 0 "U1" H 4750 1325 50  0000 C CNN
+F 1 "conn_02x04" H 4750 1234 50  0000 C CNN
+F 2 "conn_02x04:conn_02x04" H 4750 1050 50  0001 C CNN
+F 3 "" H 4750 1050 50  0001 C CNN
+	1    4750 1050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4950 1000 5400 1000
+Wire Wire Line
+	4950 1100 5400 1100
+Wire Wire Line
+	4950 1200 5400 1200
+Wire Wire Line
+	4950 1300 5400 1300
 $EndSCHEMATC
